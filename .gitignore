@@ -1,1 +1,6 @@
 touch .gitignore
+echo ".idea" > .gitignore
+git rm -r -f --cached .
+git add .
+git commit -m "Remove files"
+git push -u origin master
